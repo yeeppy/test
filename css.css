@@ -1,0 +1,270 @@
+html{
+	background: url(img/10.jpg) no-repeat center center fixed; 
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+	margin:80px;
+}
+@font-face{
+	font-family: newt;
+	src: url(opensans.ttf);
+}
+#main{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+
+}
+#leftside{
+	float:left;
+	width:49%;
+	text-align: justify;
+	padding-top:20px;
+	margin-left:2%;
+	position:relative;
+	margin-top:3%;
+
+}
+#rightside{
+	float:right;
+	width:49%;
+	margin-top:3%;
+	height:100%;
+	padding-top:20px;
+	position:relative;
+
+
+
+
+}
+
+#birth{
+	color:white;
+	text-align:center;
+	font-size:24px;
+	font-family: newt;
+
+	
+	
+}
+
+#leo{
+	color:white;
+	text-align:center;
+	font-size:24px;
+	font-family: newt;
+
+	
+}
+#horo{
+	margin:0px 0px 0px 0px;
+	color:white;
+	text-align:center;
+		font-family: newt;
+		font-size:70px;
+		opacity:0.9;
+}
+#str{
+	color:white;
+    text-align: justify;
+	font-family: newt;
+			opacity:0.9;
+
+	font-size:24px;
+}
+
+#weakness{
+	color:white;
+	text-align:left;
+	font-family: newt;
+	font-size:24px;
+			opacity:0.9;
+
+}
+#info{
+
+	color:white;
+	text-align:left;
+	font-family: newt;
+	font-size:22px;
+		opacity:0.9;
+
+}
+
+
+
+
+
+
+.fadein span{
+    position:absolute;
+  
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+
+@keyframes fade {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+	66% {opacity: 1;}
+
+    100% {opacity: 0;}
+}
+span{
+		display: inline-block;
+
+}
+#image{
+position:absolute;
+left:28%;
+right:30%;
+
+}
+#image2{
+
+position:absolute;
+left:28%;
+right:30%;
+			animation-delay:-5s;
+
+}
+#image3 {position:absolute;
+left:28%;
+right:30%;
+	
+   -webkit-animation-delay: -8s;
+}
+
+
+
+
+input[type=date] {
+	position:absolute;
+	left:180px;
+  height: 35px;
+  margin:1px 1px 1px 1px;
+	border-style:solid;
+	border-color:white;
+	border-radius:30px;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight:bold;
+  text-align:center;
+  text-transform: uppercase;
+  background-color: #2c2d54;
+  color: white;
+  border: 1;
+  padding:1;
+}
+
+#userinput2{
+	 margin:1px 1px 1px 1px;
+	border-style:solid;
+	border-color:white;
+	border-radius:30px;
+	  border: 1;
+  padding:1;
+	position:absolute;
+	left:386px;
+  height: 35px;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight:bold;
+    text-align:center;
+float:right;
+  text-transform: uppercase;
+  background-color: #2c2d54;
+  color: white;
+  
+}
+
+
+.overlay {
+	opacity:1;
+	position:fixed;
+	top:-999em;
+	left:-999em;
+	width:100%;
+	height:100%;
+	display:table;
+	background:white;
+  animation: splash 8s forwards;
+  
+}
+.overlay-inner {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	
+	
+}
+.splash {
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	text-align:center;
+	
+	padding:10px;
+	animation: log1 8s forwards;
+}
+@keyframes splash {
+  0%   {opacity: 1;top:0;left:0;}
+	20% {opacity:0.9;top:0;left:0}
+	60% {opacity:0.7;top:0;left:0}
+	80% {opacity:0.4;top:0;left:0}
+	100% {opacity:0;top:-999em;left:-999em;}
+}
+
+.log1{
+position:absolute;
+}
+
+@keyframes log1{
+     0% {opacity: 0;top:0;left:0;transform:scale(3)}
+	20% {opacity:1;top:0;left:0}
+	60% {opacity:1;top:0;left:0}
+	99% {top:0;left:0}
+	100% {opacity:1;top:-999em;left:-999em;transform:scale(3)}
+}
+
+
+#top {
+	float:right;
+		display:inline-block;
+
+	position:absolute;
+	 animation:balloon 10s ;
+	 
+}
+
+@keyframes balloon{
+ 0% {opacity: 1;top:85%;left:10px;}
+ 40% {opacity: 1;top:30%;left:200px;}
+  70% {opacity: 1;top:7%;left:300px;}
+
+	100% {opacity:1;top:1%;left:440px;}
+}
+
+#baright {
+	float:right;
+		display:inline-block;
+
+	position:absolute;
+	 animation:balloon2 10s ;
+	 
+}
+
+@keyframes balloon2{
+ 0% {opacity: 1;top:85%;left:710px;}
+ 30% {opacity: 1;top:30%;left:600px;}
+  80% {opacity: 1;top:20%;left:500px;}
+
+	100% {opacity:1;top:1%;left:440px;}
+}
